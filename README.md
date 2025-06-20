@@ -8,7 +8,7 @@ A new Flutter project.
 
 **Nawel** is a clean and responsive Flutter application for food and delivery services.  
 It showcases modern UI with **Clean Architecture**, using reusable components and proper code separation.  
-> 🛠 No backend/API is integrated — UI-focused only.
+
 
 ---
 
