@@ -7,6 +7,7 @@ import '../../../../core/constants/assets_manager.dart';
 import '../../../../core/routes/app_router.dart';
 import '../../../../core/widget/dialog_until.dart';
 import '../../../../core/widget/validators.dart';
+import '../../../home_page/presentation/screens/home_page.dart';
 import '../bloc/signup_bloc/signup_bloc.dart';
 import '../bloc/signup_bloc/signup_event.dart';
 import '../bloc/signup_bloc/signup_state.dart';
@@ -110,6 +111,10 @@ class SignupScreen extends StatelessWidget {
                             DialogUtils.showLoading(context: context, message: AppStrings.wait);
                           } else if (state is SignupSuccess) {
                             DialogUtils.hideLoading(context);
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(builder: (context) => HomeScreen()),
+                            );
                           } else if (state is SignupFailure) {
                             DialogUtils.hideLoading(context);
                             DialogUtils.showMessage(
