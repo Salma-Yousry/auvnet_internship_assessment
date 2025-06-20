@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auvnet_internship_assessment/core/constants/assets_manager.dart';
 
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 
 class RestaurantList extends StatelessWidget {
@@ -24,7 +25,7 @@ class RestaurantList extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: avatarRadius,
-          backgroundColor: Colors.grey[200],
+          backgroundColor: AppColors.gray1,
           backgroundImage: AssetImage(imagePath),
         ),
         SizedBox(height: spacing),
@@ -39,7 +40,7 @@ class RestaurantList extends StatelessWidget {
           time,
           style: TextStyle(
             fontSize: timeFontSize,
-            color: Colors.grey,
+            color: AppColors.inputBorder,
           ),
         ),
       ],

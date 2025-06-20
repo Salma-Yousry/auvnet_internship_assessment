@@ -3,6 +3,7 @@ import 'package:auvnet_internship_assessment/features/auth/presentation/screens/
 import 'package:auvnet_internship_assessment/features/home_page/presentation/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/assets_manager.dart';
 import '../../../../core/routes/app_router.dart';
@@ -26,7 +27,7 @@ class LoginScreen extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -62,7 +63,7 @@ class LoginScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: screenHeight * 0.035,
                               fontWeight: FontWeight.w600,
-                              color: Color(0xFF1F2937),
+                              color: AppColors.textPrimary,
                             ),
                           ),
                           SizedBox(height: screenHeight * 0.03),
@@ -72,7 +73,7 @@ class LoginScreen extends StatelessWidget {
                               keyboardType: TextInputType.emailAddress,
                               validator: AppValidators.validateEmail,
                               decoration: authInputDecoration(context,AppStrings.Email),
-                              style: TextStyle(fontSize: 16, color: Color(0xFF1F2937)),
+                              style: TextStyle(fontSize: 16, color: AppColors.textPrimary),
                             ),
                           ),
                           SizedBox(height: screenHeight * 0.02),
@@ -122,8 +123,8 @@ class LoginScreen extends StatelessWidget {
                                     }
                                   },
                                   style: ElevatedButton.styleFrom(
-                                    backgroundColor: Color(0xFF8B5CF6),
-                                    foregroundColor: Colors.white,
+                                    backgroundColor: AppColors.primary,
+                                    foregroundColor: AppColors.white,
                                     elevation: 0,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(12),
@@ -147,7 +148,7 @@ class LoginScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: screenHeight * 0.021,
                                 fontWeight: FontWeight.w600,
-                                color: Color(0xFF8B5CF6),
+                                color: AppColors.primary,
                               ),
                             ),
                           ),

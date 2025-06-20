@@ -1,3 +1,4 @@
+import 'package:auvnet_internship_assessment/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/assets_manager.dart';
@@ -36,14 +37,14 @@ class ServiceSection extends StatelessWidget {
             vertical: verticalPadding,
           ),
           decoration: BoxDecoration(
-            color: Colors.purple,
+            color: AppColors.purple1,
             borderRadius: BorderRadius.circular(borderRadius),
           ),
           child: Text(
             promo,
             style: TextStyle(
               fontSize: promoFontSize,
-              color: Colors.white,
+              color:AppColors.white,
               fontWeight: FontWeight.w500,
             ),
           ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/constants/app_colors.dart';
+
 class InputContainer extends StatelessWidget {
   final Widget child;
 
@@ -11,10 +13,10 @@ class InputContainer extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: const Color(0xFFF9FAFB),
+        color: AppColors.white2,
         borderRadius: BorderRadius.circular(screenWidth * 0.03),
         border: Border.all(
-          color: const Color(0xFFE5E7EB),
+          color: AppColors.white2,
           width: screenWidth * 0.0025,
         ),
       ),

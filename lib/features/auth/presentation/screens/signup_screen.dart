@@ -1,3 +1,4 @@
+import 'package:auvnet_internship_assessment/core/constants/app_colors.dart';
 import 'package:auvnet_internship_assessment/features/auth/presentation/screens/widget/auth_input_decoration.dart';
 import 'package:auvnet_internship_assessment/features/auth/presentation/screens/widget/input_container.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class SignupScreen extends StatelessWidget {
     final w = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(vertical: 20),
@@ -59,7 +60,7 @@ class SignupScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: h * 0.033,
                           fontWeight: FontWeight.w600,
-                          color: const Color(0xFF1F2937),
+                          color: AppColors.textPrimary,
                         ),
                       ),
                       SizedBox(height: h * 0.03),
@@ -70,7 +71,7 @@ class SignupScreen extends StatelessWidget {
                           keyboardType: TextInputType.emailAddress,
                           validator: AppValidators.validateEmail,
                           decoration: authInputDecoration(context, AppStrings.Email),
-                          style: const TextStyle(fontSize: 16, color: Color(0xFF1F2937)),
+                          style: const TextStyle(fontSize: 16, color: AppColors.textPrimary),
                         ),
                       ),
                       SizedBox(height: h * 0.02),
@@ -81,7 +82,7 @@ class SignupScreen extends StatelessWidget {
                           obscureText: true,
                           validator: AppValidators.validatePassword,
                           decoration: authInputDecoration(context, AppStrings.password),
-                          style: const TextStyle(fontSize: 16, color: Color(0xFF1F2937)),
+                          style: const TextStyle(fontSize: 16, color: AppColors.textPrimary),
                         ),
                       ),
                       SizedBox(height: h * 0.02),
@@ -100,7 +101,7 @@ class SignupScreen extends StatelessWidget {
                             return null;
                           },
                           decoration: authInputDecoration(context, AppStrings.confirmPassword),
-                          style: const TextStyle(fontSize: 16, color: Color(0xFF1F2937)),
+                          style: const TextStyle(fontSize: 16, color: AppColors.textPrimary),
                         ),
                       ),
                       SizedBox(height: h * 0.03),
@@ -139,8 +140,8 @@ class SignupScreen extends StatelessWidget {
                                 }
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF8B5CF6),
-                                foregroundColor: Colors.white,
+                                backgroundColor:  AppColors.primary,
+                                foregroundColor: AppColors.white,
                                 elevation: 0,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12),
@@ -165,7 +166,7 @@ class SignupScreen extends StatelessWidget {
                           style: TextStyle(
                             fontSize: h * 0.021,
                             fontWeight: FontWeight.w600,
-                            color: const Color(0xFF8B5CF6),
+                            color: AppColors.primary,
                           ),
                         ),
                       ),

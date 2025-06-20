@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/assets_manager.dart';
 
@@ -14,8 +15,8 @@ class BottomNavbar extends StatelessWidget {
 
     return BottomNavigationBar(
       currentIndex: 0,
-      selectedItemColor: Colors.deepPurple,
-      unselectedItemColor: Colors.grey,
+      selectedItemColor: AppColors.primary,
+      unselectedItemColor: AppColors.textSecondary,
       type: BottomNavigationBarType.fixed,
       items: [
         BottomNavigationBarItem(

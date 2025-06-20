@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/constants/assets_manager.dart';
 
@@ -41,7 +42,7 @@ class PromoBanner extends StatelessWidget {
                   style: TextStyle(
                     fontSize: screenHeight * 0.025,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: AppColors.black,
                   ),
                 ),
                 SizedBox(height: screenHeight * 0.007),
@@ -49,7 +50,7 @@ class PromoBanner extends StatelessWidget {
                   AppStrings.order,
                   style: TextStyle(
                     fontSize: screenHeight * 0.019,
-                    color: Colors.black38,
+                    color: AppColors.black,
                     fontWeight: FontWeight.w500,
                   ),
                 ),

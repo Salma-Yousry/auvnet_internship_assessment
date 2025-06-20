@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/assets_manager.dart';
 
 class PromoImage extends StatefulWidget {
@@ -47,7 +48,7 @@ class _PromoImageState extends State<PromoImage> {
       height: isActive ? size : size * 0.8,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: isActive ? Colors.black : Colors.grey.shade400,
+        color: isActive ? AppColors.black : AppColors.gray,
       ),
     );
   }

@@ -2,6 +2,7 @@ import 'package:auvnet_internship_assessment/core/constants/assets_manager.dart'
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_strings.dart';
 
 class HeaderWidget extends StatefulWidget {
@@ -39,13 +40,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
       width: double.infinity,
       height: screenHeight * 0.22,
       padding: EdgeInsets.all(screenWidth * 0.05),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFF7B4397), Color(0xFFFEDA77)],
+          colors: [AppColors.purple,AppColors.yellow],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(32),
           bottomRight: Radius.circular(32),
         ),
@@ -75,9 +76,9 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                 ),
                 SizedBox(height: screenHeight * 0.015),
                 Text(
-                  'Hi $username!',
+                  '${AppStrings.Hi} $username!',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: AppColors.white,
                     fontSize: screenHeight * 0.035,
                     fontWeight: FontWeight.bold,
                   ),

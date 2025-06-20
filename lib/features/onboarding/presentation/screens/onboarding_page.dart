@@ -1,3 +1,4 @@
+import 'package:auvnet_internship_assessment/core/constants/app_colors.dart';
 import 'package:auvnet_internship_assessment/core/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -79,7 +80,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       item.description,
                       style: TextStyle(
                         fontSize: screenHeight * 0.02,
-                        color: Colors.grey,
+                        color: AppColors.gray,
                       ),
                       textAlign: TextAlign.center,
                     ),

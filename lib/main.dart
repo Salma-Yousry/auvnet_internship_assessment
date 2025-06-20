@@ -44,7 +44,6 @@ class MyApp extends StatelessWidget {
       title: AppStrings.nawel,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
         primaryColor: AppColors.primary,
         scaffoldBackgroundColor: AppColors.background,
       ),
