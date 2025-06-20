@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601863882725",
+    "project_id": "flutter-internship-task-f9972",
+    "storage_bucket": "flutter-internship-task-f9972.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601863882725:android:91fd9cfe6b67c3716c910c",
+        "android_client_info": {
+          "package_name": "com.example.auvnet_internship_assessment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbFdKlabQ2iwB9HB8JyEkTKxa3bna9ci4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

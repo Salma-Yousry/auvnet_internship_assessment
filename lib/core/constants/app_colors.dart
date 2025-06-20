@@ -1,0 +1,14 @@
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+
+class AppColors {
+  static const Color primary = Color(0xFF8B5CF6);
+  static const Color background = Colors.white;
+  static const Color textPrimary = Color(0xFF1F2937);
+  static const Color textSecondary = Color(0xFF9CA3AF);
+  static const Color inputBackground = Color(0xFFF9FAFB);
+  static const Color inputBorder = Color(0xFFE5E7EB);
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color error = Color(0xFFEF4444);
+}
